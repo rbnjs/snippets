@@ -1,0 +1,17 @@
+snippet d "def (without arguments)"
+def ${1:method}
+end
+endsnippet
+
+snippet d() "def (with arguments)"
+def ${1:method}(${2:arguments})
+end
+endsnippet
+
+snippet @par "@param [Type] (Yard)"
+@param [${1:Type}] $2
+endsnippet
+
+snippet @ret "@return [Type] (Yard)"
+@return [${1:Type}] $2
+endsnippet

@@ -1,0 +1,70 @@
+snippet vreq "require a module"
+var ${1:variable} = require('${2}');
+$0
+endsnippet
+
+snippet rreact "Require React"
+var ${1:React} = require('react');
+endsnippet
+
+snippet rflux "Require Reflux"
+var ${1:Reflux} = require('reflux');
+endsnippet
+
+snippet mexp "module exports"
+module.exports = $1
+endsnippet
+
+snippet rclass "React Create Class"
+React.createClass({$1
+});
+endsnippet
+
+snippet rf.cs "Reflux create Store"
+Reflux.createStore({$1
+});
+endsnippet
+
+snippet rb "React Block"
+<$1>$2</$1>
+endsnippet
+
+snippet rrjsx "React Return JSX"
+return <$1>
+  $2
+</$1>
+endsnippet
+
+snippet cn "React className"
+className="$1"
+endsnippet
+
+snippet {t.p} "React props"
+{this.props.$1}
+endsnippet
+
+snippet t.p "React this.props."
+this.props.$1
+endsnippet
+
+snippet {t.s} "React this.state."
+{this.state.$1}
+endsnippet
+
+snippet gis "React getInitialState"
+getInitialState: function(){
+  return {
+    $1
+  }
+}${2:,}
+endsnippet
+
+snippet cwm "React componentWillMount"
+componentWillMount: function(){
+  $1
+}${2:,}
+endsnippet
+
+snippet rss "React set State"
+this.setState({$1});
+endsnippet
